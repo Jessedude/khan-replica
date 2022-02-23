@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+   
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+img {
+    width: 100%;
+}
+
+/************************
+        Header
+************************/
+
+header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.primary-nav > * {
+    padding-top: 15px;
+    text-align: center;
+    float: left;
+}
+
+.primary-nav > h2{
+    width: 12.5%;
+    font-size: 20px;
+    color: rgb(5, 5, 107)
+    
+}
+
+.primary-nav>div,
+.primary-nav>ul {
+    width: 42.5%;
+    padding-left: 100px;
+}
+
+.primary-nav li {
+    padding-left: 50px;
+}
+
+div> form,
+ul>li {
+    float: left;
+}
+
+
+div>form+form {
+    padding-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(38, 106, 209);
+    font-weight: 500;
+}
+
+.course {
+    color: rgb(38, 106, 209);
+}
+
+::placeholder {
+    color:rgb(38, 106, 209);
+    font-weight: 700;
+}
+
+.search-bar>input {
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+    margin-top:-8px;
+    background-color: rgb(235, 235, 235);
+}
+
+.course {
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+/************************
+        Main
+************************/
+section p,
+.primary-nav h2,
+.links {
+    font-family: sans-serif;
+}
+
+main {
+   
+    float: left;
+    width: 100%;
+    margin: 80px 0 0 150px;
+}
+
+main >div,
+main >section {
+    margin-right: 10px;
+    width: 35%;
+    float: left;
+}
+
+.front-image {
+    margin-left: -20px;
+    width: 40%;
+}
+
+.main-section {
+    text-align: left;
+    margin: 100px 0 0 10px;
+}
+
+.main-section>h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.main-section>p {
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+.green {
+    position: relative;
+}
+
+.green:after {
+    content: ' ';
+    position: absolute;
+    background-color: rgb(30, 155, 144);
+    width: 250px;
+    height: 2px;
+    top: 60px;
+    left: 3%;
+    transform: skewY(-3deg);
+    border-radius: 25px;
+}
+
+.main-links a {
+    background-color: rgb(46, 116, 221);
+    padding: 10px;
+    margin: 0 10px 0 0;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+}
+
